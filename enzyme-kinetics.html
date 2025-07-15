@@ -27,6 +27,9 @@
       border-radius: 4px;
       display: inline-block;
     }
+    .equation-section {
+      margin-bottom: 2rem;
+    }
   </style>
 </head>
 <body>
@@ -45,24 +48,26 @@
     <h2 class="h5">Overview</h2>
     <p>This module explores enzyme kinetics by simulating reaction rates based on classical biochemical models.</p>
 
-    <h3 class="h6 mt-4">Key Equations</h3>
-    <ul>
-      <li><strong>Michaelis-Menten Equation:</strong>
-        <span class="math">v = (V<sub>max</sub>[S]) / (K<sub>m</sub> + [S])</span>
-      </li>
-      <li><strong>Lineweaver-Burk Equation:</strong>
-        <span class="math">1/v = (K<sub>m</sub> / V<sub>max</sub>) * (1 / [S]) + 1 / V<sub>max</sub></span>
-      </li>
-      <li><strong>General Reaction Rate:</strong>
-        <span class="math">v = k<sub>cat</sub>[E][S] / (K<sub>m</sub> + [S])</span>
-      </li>
-    </ul>
-
-    <div class="mt-4">
+    <!-- Equation 1 -->
+    <div class="equation-section">
+      <h3 class="h6">Michaelis-Menten Equation</h3>
+      <p><span class="math">v = (V<sub>max</sub>[S]) / (K<sub>m</sub> + [S])</span></p>
       <a href="https://colab.research.google.com/drive/1ORZo2-nYXfzC_k2xjWAd5-W0dRTA2twq?usp=sharing"
-         class="btn btn-primary" target="_blank">
-        Launch in Google Colab
-      </a>
+         class="btn btn-primary btn-sm" target="_blank">Open Michaelis-Menten Notebook</a>
+    </div>
+
+    <!-- Equation 2 -->
+    <div class="equation-section">
+      <h3 class="h6">Lineweaver-Burk Equation</h3>
+      <p><span class="math">1/v = (K<sub>m</sub> / V<sub>max</sub>) × (1 / [S]) + 1 / V<sub>max</sub></span></p>
+      <a href="https://colab.research.google.com/drive/1EXAMPLE_LINEWEAVER" class="btn btn-primary btn-sm" target="_blank">Open Lineweaver-Burk Notebook</a>
+    </div>
+
+    <!-- Equation 3 -->
+    <div class="equation-section">
+      <h3 class="h6">General Reaction Rate</h3>
+      <p><span class="math">v = k<sub>cat</sub>[E][S] / (K<sub>m</sub> + [S])</span></p>
+      <a href="https://colab.research.google.com/drive/1EXAMPLE_GENERALRATE" class="btn btn-primary btn-sm" target="_blank">Open General Rate Notebook</a>
     </div>
   </div>
 </section>
