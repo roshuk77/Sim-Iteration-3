@@ -5,12 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Arrhenius Equation</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
   <style>
     body { background-color: #f8f9fa; }
     .text-purple { color: #4e2a84; }
     .btn-primary { background-color: #4e2a84; border-color: #4e2a84; }
     .btn-primary:hover { background-color: #3b216a; border-color: #3b216a; }
-    .math { font-family: "Courier New", monospace; background-color: #f1f1f1; padding: 4px 8px; border-radius: 4px; display: inline-block; }
+    .equation-container { 
+      font-family: "Courier New", monospace; 
+      margin-bottom: 1rem; 
+    }
+    /* Equation alignment + spacing fixes */
+    .equation-left {
+      text-align: left;
+      margin-left: 0;
+      padding-left: 0;
+    }
+    .equation-left p {
+      margin: 0; /* removes default <p> spacing */
+    }
+    .equation-left .MathJax {
+      display: block !important;
+      text-align: left !important;
+    }
   </style>
 </head>
 <body>
@@ -23,13 +44,19 @@
 
 <div class="container mb-5 bg-white p-4 rounded shadow-sm">
   <h2 class="h5">Equation & Simulation</h2>
-  <p class="mb-3"><span class="math">k = A \exp\left(-\dfrac{E_a}{R T}\right)</span></p>
 
-  <div class="mb-3">
-    <a href="https://colab.research.google.com/drive/1oGHLj3eWppA6_raGca7-eGxXvlJLVMJs?authuser=1" target="_blank" class="btn btn-primary btn-sm">Arrhenius Equation Notebook</a>
+  <div class="equation-container">
+    <p class="mb-1">Arrhenius Equation:</p>
+    <div class="equation-left">
+      <p class="math">$$k = A \exp\left(-\dfrac{E_a}{R T}\right)$$</p>
+    </div>
+    <a href="https://colab.research.google.com/drive/1oGHLj3eWppA6_raGca7-eGxXvlJLVMJs?authuser=1" 
+       target="_blank" 
+       class="btn btn-primary btn-sm mt-2">Open Notebook</a>
   </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
